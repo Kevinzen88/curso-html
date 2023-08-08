@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/CelulasPlenum.png">
+    <title>Portafolio Celulas</title>
+	<link rel="stylesheet" href="/estilos/subestilos.css">
+</head>
+<body class="fondo_B">
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<a href="/vistas/principal.html"><label>☰</label></a>
+		</div>
+			<div class="logo">
+				<!-- <img src="/img/Logo_Plenumsoft.png">-->
+                <h1>Plenumsoft</h1>
+			</div>
+
+			<nav class="menu"  role="navigation">
+                <ul>
+                    <li><a aria-haspopup="true">TEMA SELECTOS DE ISW</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="/vistas/html/Tem_Uno/1.1.html">1.1-Visión general del proceso de Ingeniería de Software</a></li>
+                            <li><a href="/vistas/html/Tem_Uno/1.2.html">1.2-Requerimientos</a></li>
+                            <li><a href="/vistas/html/Tem_Uno/1.3.html">1.3-Arquitectura</a></li>
+                            <li><a href="/vistas/html/Tem_Uno/1.4.html">1.4-Patrones de Diseño</a></li>
+                            <li><a href="/vistas/html/Tem_Uno/1.5.html">1.5-Matemáticas y Algoritmos</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a aria-haspopup="true">FUNDAMENTOS DE PROGRAMACIÓN</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="/vistas/html/Tem_Dos/2.1.html">2.1-Bases de Datos Relacionales</a></li>
+                            <li><a href="/vistas/html/Tem_Dos/2.2.html">2.2-SQL</a></li>
+                            <li><a href="/vistas/html/Tem_Dos/2.3.html">2.3-Triggers</a></li>
+                            <li><a href="/vistas/html/Tem_Dos/2.4.html">2.4-Programación Orientada a Objetos</a></li>
+                            <li><a href="/vistas/html/Tem_Dos/2.5.html">2.5-Práctica de Java y MySQL</a></li>
+                            <li><a href="/vistas/html/Tem_Dos/2.6.html">2.6-API</a></li>
+                        </ul>
+                    </li>
+                    <li><a aria-haspopup="true">FUNDAMENTOS DE PROGRAMACIÓN WEB</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="/vistas/html/Tem_Tres/3.1.html">3.1-HTTP y HTML</a></li>
+                        </ul>
+                    </li>
+                </ul>
+			</nav>
+		</div>
+    
+    </header>
+
+    <div class="Image_Logo">
+        <img src="/img/blanco.jpg">
+        <img class="Image_Logo_U" src="/img/blanco.jpg">
+
+        <div class="ContainerCenter">
+        <!-- Radio Seleccionar -->
+        <input type="radio" name="Carrusel" id="Slider1" checked>
+        <input type="radio" name="Carrusel" id="Slider2">
+        <input type="radio" name="Carrusel" id="Slider3">
+        
+        <div class="Carrusels">
+          <!-- Imagen contenido -->
+          <div class="Carrusel"></div> 
+          <div class="Carrusel"></div>
+          <div class="Carrusel"></div>
+          
+          <!-- Flechas a la izquierda por cada imagen -->
+          <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
+          <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
+          <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+          
+          <!-- Flechas a la derecha por cada imagen -->
+          <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
+          <label for="Slider3" class="ArrowRight Arrow2">❯</label>
+          <label for="Slider1" class="ArrowRight Arrow3">❯</label>
+        </div>
+        
+        <!-- Selector circulos inferiores colgantes -->
+        <div class="Selectors">
+          <label for="Slider1" class="Selector"></label>
+          <label for="Slider2" class="Selector"></label>
+          <label for="Slider3" class="Selector"></label>
+        </div>
+        </div>
+    </div>
+
+
+    
+    
+
+</body>
+
+</html>

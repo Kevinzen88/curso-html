@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.Image_Logo {
+    display: flex;
+    justify-content: center;
+    width: 510px;
+    height: 430px;
+    margin-top: 250px;
+    margin-left: 450px;
+    box-shadow: #000000;
+}
+.Image_Logo_U{
+    width: 470px;
+    height: 430px;
+    
+    margin-left: 120px;
+   
+    box-shadow: #000000; 
+}
+
+.textos_ini{
+    transform: rotate(-45deg);
+    color: #fff;
+    position: absolute;
+    text-align: right;
+    right: 35%;
+    top: 60%;
+
+
+}
+
+.textos_ini, h1{
+    font-size: 45px;
+}
+
+h5{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+
+.fondo_B{
+    background: url(/img/fondo-2.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.pantalla_Obs{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    padding-top: 15px;
+    float: right;
+    line-height: 20px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 25px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+/*Fin de Menù lateral*/
+
+a {
+    text-decoration: none;
+  }
+  
+  nav {
+    font-family: monospace;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    padding-top: auto;
+  }
+  
+  li:hover,
+  li:focus-within {
+    background: rgba(21, 132, 230, 0.494);
+    cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    background: rgba(255, 255, 255, 0.113);
+    
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 0.1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    
+     visibility: visible;
+     display: block;
+     position: absolute;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  /*carrusel*/
+
+  /* Contenedor para centrar */
+.ContainerCenter{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 61%;
+    padding-top: 8%;
+  }
+  /* Input */
+  input{display: none}
+  
+  
+  
+  /* Slider */
+  .Carrusels{
+    height: 210px;
+    width: 400px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .Carrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow-y: hidden;
+    transition: all .5s ease;
+  }
+  /* Configuracion de elementos individuales */
+  .Carrusels .Carrusel:nth-child(1) {background-image: url(/estilos/Ejercicios/Ejercicios_SQL/SQL_4.png);}
+  .Carrusels .Carrusel:nth-child(2) {background-image: url(/estilos/Ejercicios/Ejercicios_SQL/SQL_2.png);}
+  .Carrusels .Carrusel:nth-child(3) {background-image: url(/estilos/Ejercicios/Ejercicios_SQL/SQL_3.png);}
+  /* Estado 1 */
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+  /* Estado 2 */
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+  /* Estado 3 */
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+  
+  
+  /* Flechas */
+  .Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+    position: absolute;
+    height: 100%;
+    width: 2em;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .Carrusels .ArrowLeft{left: 0px;}
+  .Carrusels .ArrowRight{right: 0px;}
+  /* Configuracion de flechas individuales */
+  #Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+  #Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+  #Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+  
+  
+  /* Selectores */
+  .Selectors {
+    width: 60px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Selectors .Selector {
+    background-color: #90beff;
+    height: 10px;
+    width: 10px;
+    display: block;
+    border-radius: 5px;
+  }
+  /* Condicionales para botón inferior */
+  #Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #006eff;}
+  #Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #006eff;}
+  #Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #006eff;}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo:300");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.btn-mover{
+  position: absolute;
+  left: 83%;
+  top: 7%;
+}
+.btn-moveru{
+  position: absolute;
+  left: 48%;
+  top: 12%;
+}
+
+.btn-moveru:hover{
+  background-color: #094f9f;
+  color: #ffffff;
+}
+
+.btn-moverr{
+  position: absolute;
+  left: 48%;
+  top: 12%;
+}
+.btn-moverr:hover{
+  background-color: #094f9f;
+  color: #ffffff;
+}
+
+.cu{
+  position: absolute;
+  width: 700px;
+  top:33%;
+  left: 25%;
+}
+
+.fadeUno{
+  width: 1100px;
+  height: 630px;
+  right: 60%;
+  background-image: url(/img/70936-formas.jpg);
+  color: #fff;
+}
+
+.header {
+  margin: 100px auto;
+  max-width: 1280px;
+  height: 650px;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.header .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(12, 0, 100, 0.1), #0404047d), url("/img/fondo-2.jpg") 90% 10%/cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .img > * {
+  padding: 0 60px;
+}
+.header .img > * > * {
+  margin: 10px 0;
+}
+.header .img h3 {
+  color: #fff;
+  font-size: 3.5em;
+  line-height: 1;
+  font-size: 60px;
+
+}
+.header .img span:hover {
+  background: #2bbfff;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+}
+.header .img ul.details {
+  color: #2b52ff;
+  padding-bottom: 80%;
+}
+.header .img ul.details a {
+  text-decoration: none;
+  color: #ccc;
+}
+.header .img ul li a:hover {
+  background: rgba(255, 255, 255, 0.132);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.formas{
+    padding-top: 22%;
+    padding-left: 3%;
+}
+
+.text{
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    top: 250px;
+}
+.text-1{
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    top: 250px;
+    right: 520px;
+}
+.formas_u{
+    padding-left: 40%;
+}
+iframe{
+    width: 330px;
+    height: 240px;
+    border-radius: 40px;
+    margin: 10px;
+    text-align: center;
+  
+}
+
+
+.formas  .letra_u{
+    position: absolute;
+    color: #ccc;
+}
+.formas  .letra_uu{
+    position: absolute;
+    color: #ccc;
+}
+@media (max-width: 550px){
+
+  .btn-mover{
+    left: 60%;
+    position: absolute;
+  }
+  .details{
+    position: absolute;
+    top: -9%;
+    left: 4%;
+  }
+  h3{
+    position: absolute;
+    top: 6%;
+    left: 0;
+    text-align: center;
+  }
+
+  .block a b{
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    color: #fff;
+  }
+
+  .cu{
+    position: absolute;
+    width: 420px;
+    top:40%;
+    left: 4%;
+  }
+
+  .fadeUno{
+    width: 400px;
+    height: 980px;
+    left: 5%;
+    background-image: url(/img/70936-formas.jpg);
+    color: #fff;
+  }
+  iframe{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    margin: 10px;
+    text-align: center;
+  }
+}
+
